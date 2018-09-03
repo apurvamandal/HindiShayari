@@ -32,7 +32,9 @@ public class Shayari_List extends Fragment {
 
         recyclerView = v.findViewById(R.id.shayarirecylerview);
 
-        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL));
+       // recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL));
+        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(getResources()));
+
         String[] data=getResources().getStringArray(R.array.sad_shayari);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
