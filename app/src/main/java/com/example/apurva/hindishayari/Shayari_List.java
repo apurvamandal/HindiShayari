@@ -38,7 +38,8 @@ public class Shayari_List extends Fragment {
         String[] data=getResources().getStringArray(R.array.sad_shayari);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new ShayariListAdapter(data));
+        recyclerView.setAdapter(new ShayariListAdapter(data,getContext()));
+
         return v;
     }
 
