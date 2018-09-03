@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/shayari_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:maxLines="2"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:background="@drawable/customtextback"
+        android:textStyle="italic"
+        android:text="Mast sharai"/>
+
+</LinearLayout>
