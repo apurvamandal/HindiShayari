@@ -3,9 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-    <TextView
+
+    <android.support.text.emoji.widget.EmojiTextView
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
         android:id="@+id/shayari_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,10 +17,26 @@
         android:ellipsize="end"
         android:textColor="@android:color/white"
         android:maxLines="2"
-        android:paddingLeft="2dp"
-        android:paddingRight="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:background="@drawable/customtextback"
         android:textStyle="italic"
-        android:text="Mast sharai"/>
+        android:text="Mast sharai" />
+    <!--<TextView-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:id="@+id/shayari_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="20dp"-->
+        <!--android:ellipsize="end"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:maxLines="2"-->
+        <!--android:paddingLeft="2dp"-->
+        <!--android:paddingRight="2dp"-->
+        <!--android:background="@drawable/customtextback"-->
+        <!--android:textStyle="italic"-->
+        <!--android:text="Mast sharai"/>-->
 
 </LinearLayout>

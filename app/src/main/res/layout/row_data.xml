@@ -34,7 +34,7 @@
                    android:layout_height="90dp"
                    android:layout_centerHorizontal="true"
                    android:layout_centerVertical="true"
-                   android:src="@drawable/apple" />
+                   android:src="@drawable/oranges" />
            </RelativeLayout>
        </android.support.v7.widget.CardView>
     </RelativeLayout>
