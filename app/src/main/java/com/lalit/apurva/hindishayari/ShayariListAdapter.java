@@ -20,6 +20,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+
 import static android.content.Context.CLIPBOARD_SERVICE;
 
 public class ShayariListAdapter extends RecyclerView.Adapter<ShayariListAdapter.ShayariListViewHolder>{
@@ -30,6 +34,7 @@ public class ShayariListAdapter extends RecyclerView.Adapter<ShayariListAdapter.
     private String[] data;
     private Context context;
     Dialog dialog;
+    AdView adView1,adView2;
     Button copy,whatsapp,share;
     public ShayariListAdapter(String[] data,Context context){
         this.data=data;
@@ -73,6 +78,23 @@ public class ShayariListAdapter extends RecyclerView.Adapter<ShayariListAdapter.
                 copy=dialog.findViewById(R.id.copy);
                 share=dialog.findViewById(R.id.share);
                 whatsapp=dialog.findViewById(R.id.whatsAppshare);
+
+                adView1=dialog.findViewById(R.id.bannerAd_dialog1);
+                adView2=dialog.findViewById(R.id.bannerAd_dialog2);
+
+                //request ad to admob server
+                AdRequest adRequest1 = new AdRequest.Builder().build();
+
+                //add ad to Adview object
+                adView1.loadAd(adRequest1);
+
+
+                //request ad to admob server
+                AdRequest adRequest2 = new AdRequest.Builder().build();
+
+                //add ad to Adview object
+                adView2.loadAd(adRequest2);
+
 
                 // for direct whatsapp share
                 whatsapp.setOnClickListener(new View.OnClickListener() {
